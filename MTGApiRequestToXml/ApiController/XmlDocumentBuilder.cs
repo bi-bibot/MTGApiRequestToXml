@@ -1,10 +1,9 @@
-﻿using MTGApiRequestToXml.tool;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
+﻿using System.Xml;
+using System.IO;
+using System.Xml.Serialization;
+using MTGApiRequestToXml.ApiController;
+using System.Xml.Linq;
+using System.Reflection;
 
 namespace MTGApiRequestToXml.ApiController
 {
@@ -16,52 +15,19 @@ namespace MTGApiRequestToXml.ApiController
             this.folderPath = folderPath;
         }
 
-        public async void BuildXmlDocument(Dictionary<string, List<string>> dict)
-        {
-            foreach (var kvp in dict)
-            {
-                // Create directory for each key
-                string path = Path.Combine(folderPath, kvp.Key);
-
-                if (!Directory.Exists(path))
-                {
-                    Directory.CreateDirectory(path);
-                }
-
-                foreach (var value in kvp.Value)
-                {
-                    string filePath = Path.Combine(path, $"{value}.xml");
-                    if (File.Exists(filePath))
-                    {
-                        File.Delete(path);
-                    }
-                    string FormattedValue = RegExTool.FormatCardName(value);
-                    await GenerateXmlFile(filePath, FormattedValue);
-
-                }
-            }
-        }
-
-        /// <summary>
-        /// Generates XML file
-        /// </summary>
-        /// <param name="filePath"></param>
-        /// <param name="value"></param>
         /// <returns></returns>
-        private async Task GenerateXmlFile(string filePath, string value)
+        public async Task GenerateXmlFile(MappingTool mappingTool)
         {
             //Before this i have to map the json file to xml
             try
             {
-                XmlDocument xmlDoc = new XmlDocument();
-                string url = $"https://api.scryfall.com/cards/named?exact={value}";
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
 
-                XmlElement parentElement = xmlDoc.CreateElement("Root");
-                xmlDoc.AppendChild(parentElement);
-                XmlElement childElement = xmlDoc.CreateElement("Item");
-                childElement.InnerText = value;
-                parentElement.AppendChild(childElement);
-                xmlDoc.Save(filePath);
+                }
+                XDocument doc = SerializeToXml(mappingTool);
+                doc.Save(Path.Combine(folderPath, $"{mappingTool.name}.xml"));
 
             }
             catch (Exception e)
@@ -69,7 +35,30 @@ namespace MTGApiRequestToXml.ApiController
                 Console.WriteLine($"Error generating XML file: {e.Message}");
             }
         }
-        //MapCardJsonToXml
 
+        private XDocument SerializeToXml(MappingTool mappingTool)
+        {
+            XElement root = new XElement(typeof(MappingTool).Name);
+            foreach (PropertyInfo prop in typeof(MappingTool).GetProperties())
+            {
+                if (prop.PropertyType == typeof(Dictionary<string, string>))
+                {
+                    XElement dictElement = new XElement(prop.Name);
+                    var dict = (Dictionary<string, string>)prop.GetValue(mappingTool);
+                    foreach (var kvp in dict)
+                    {
+                        dictElement.Add(new XElement("Attribute",
+                            new XAttribute("Key", kvp.Key),
+                            new XAttribute("Value", kvp.Value)));
+                    }
+                    root.Add(dictElement);
+                }
+                else
+                {
+                    root.Add(new XElement(prop.Name, prop.GetValue(mappingTool)));
+                }
+            }
+            return new XDocument(new XDeclaration("1.0", "utf-8", "yes"), root);
+        }
     }
 }

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MappingTool>
+  <id>a577ba08-0aa8-45be-aa83-d5078770127c</id>
+  <name>Edgar Markov</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/a/5/a577ba08-0aa8-45be-aa83-d5078770127c.jpg?1736468492" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/a/5/a577ba08-0aa8-45be-aa83-d5078770127c.jpg?1736468492" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/a/5/a577ba08-0aa8-45be-aa83-d5078770127c.jpg?1736468492" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/a/5/a577ba08-0aa8-45be-aa83-d5078770127c.png?1736468492" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/a/5/a577ba08-0aa8-45be-aa83-d5078770127c.jpg?1736468492" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/a/5/a577ba08-0aa8-45be-aa83-d5078770127c.jpg?1736468492" />
+  </image_uris>
+  <mana_cost>{3}{R}{W}{B}</mana_cost>
+  <cmc>6</cmc>
+  <type_line>Legendary Creature — Vampire Knight</type_line>
+  <oracle_text>Eminence — Whenever you cast another Vampire spell, if Edgar is in the command zone or on the battlefield, create a 1/1 black Vampire creature token.
+First strike, haste
+Whenever Edgar attacks, put a +1/+1 counter on each Vampire you control.</oracle_text>
+  <colors>BRW</colors>
+  <color_identity>BRW</color_identity>
+</MappingTool>

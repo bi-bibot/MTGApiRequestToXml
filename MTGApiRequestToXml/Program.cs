@@ -18,6 +18,20 @@ public class Program
         cardName = RegExTool.FormatCardName(cardName);
         var jsonResponse = await sryFallApiRequest.GetResponseFromApiAsync(cardName);
 
+        if(jsonResponse != null)
+        {
+            jsonExtractorTool = new JsonExtractorTool(jsonResponse);
+            mappingTool = jsonExtractorTool.map();
+            XmlDocumentBuilder xmlDocumentBuilder = new XmlDocumentBuilder($"C:\\Users\\BATSAIKHAN_0001\\source\\repos\\MTGApiRequestToXml\\MTGApiRequestToXml\\XmlFiles");
+            await xmlDocumentBuilder.GenerateXmlFile(mappingTool);
+
+        }
+        else
+        {
+            Console.WriteLine("Error: No response from Scryfall API");
+        }
+
+        
 
     }
 }

@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.Xml.Serialization;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace MTGApiRequestToXml.ApiController
 {
@@ -17,13 +20,15 @@ namespace MTGApiRequestToXml.ApiController
         /// <param name="jsonResponse"></param>
         public JsonExtractorTool(string jsonResponse)
         {
-            jsonResponse = jsonResponse;
+            this.jsonResponse = jsonResponse;
         }
 
         /// <summary>
         public MappingTool map()
         {
-            MappingTool middleware = new MappingTool();
+
+            MappingTool middleware = Newtonsoft.Json.JsonConvert.DeserializeObject<MappingTool>(jsonResponse);
+
             return middleware;
         }
 
