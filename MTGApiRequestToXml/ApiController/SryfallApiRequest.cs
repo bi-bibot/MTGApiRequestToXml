@@ -6,15 +6,24 @@ using System.Threading.Tasks;
 
 namespace MTGApiRequestToXml.ApiController
 {
-
+    /// <summary>
+    /// Handling Api request of Scryfall
+    /// </summary>
     public class SryFallApiRequest
     {
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public SryFallApiRequest()
         {
             //
         }
 
+        /// <summary>
+        /// Get response from Scryfall API
+        /// </summary>
+        /// <param name="goodcardName">goodcardName</param>
+        /// <returns>json string</returns>
         public async Task<string> GetResponseFromApiAsync(string goodcardName)
         {
             // Ensure TLS 1.2 is used (for older .NET Framework versions)

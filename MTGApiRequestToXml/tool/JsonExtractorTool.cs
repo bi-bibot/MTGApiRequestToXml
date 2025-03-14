@@ -13,6 +13,9 @@ namespace MTGApiRequestToXml.tool
 {
     public class JsonExtractorTool
     {
+        /// <summary>
+        /// jsonResponse
+        /// </summary>
         public string jsonResponse { get; set; }
 
         /// <summary>
@@ -25,48 +28,15 @@ namespace MTGApiRequestToXml.tool
         }
 
         /// <summary>
+        /// Map json to object
+        /// </summary>
+        /// <returns>returns mapped table</returns>
         public MappingTool map()
         {
 
             MappingTool middleware = JsonConvert.DeserializeObject<MappingTool>(jsonResponse);
 
             return middleware;
-        }
-
-        //TODO:: have to generalize
-        public async Task<Dictionary<string, object>> getJsontoDict()
-        {
-            Dictionary<string, object> cardlists = new Dictionary<string, object>();
-
-            using (JsonDocument doc = JsonDocument.Parse(jsonResponse))
-            {
-                JsonElement root = doc.RootElement;
-
-                foreach (JsonProperty property in root.EnumerateObject())
-                {
-                    Console.WriteLine($"{property.Name}: {property.Value}");
-
-                    if (property.Value.ValueKind == JsonValueKind.Number)
-                    {
-                        cardlists.Add(property.Name, property.Value.GetDouble());
-                    }
-                    if (property.Value.ValueKind == JsonValueKind.String)
-                    {
-                        cardlists.Add(property.Name, property.Value.GetString());
-                    }
-                    if (property.Value.ValueKind == JsonValueKind.Array)
-                    {
-                        List<string> cardlist_cards = new List<string>();
-                        foreach (JsonElement card in property.Value.EnumerateArray())
-                        {
-                            cardlist_cards.Add(card.GetProperty("name").GetString());
-                        }
-                        cardlists.Add(property.Name, cardlist_cards);
-                    }
-                }
-            }
-
-            return cardlists;
         }
     }
 }

@@ -16,6 +16,14 @@
   <oracle_text>Eminence — Whenever you cast another Vampire spell, if Edgar is in the command zone or on the battlefield, create a 1/1 black Vampire creature token.
 First strike, haste
 Whenever Edgar attacks, put a +1/+1 counter on each Vampire you control.</oracle_text>
-  <colors>BRW</colors>
-  <color_identity>BRW</color_identity>
+  <colors>
+    <Item>B</Item>
+    <Item>R</Item>
+    <Item>W</Item>
+  </colors>
+  <color_identity>
+    <Item>B</Item>
+    <Item>R</Item>
+    <Item>W</Item>
+  </color_identity>
 </MappingTool>
