@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MTGApiRequestToXml.ApiController
+namespace MTGApiRequestToXml.Domain.Entities
 {
     /// <summary>
-    /// MappingTool class for mapping json to object
+    /// Card class for mapping json to object
     /// </summary>
-    public class MappingTool
+    public class Card
     {
         /// <summary>
         /// id
@@ -59,9 +59,9 @@ namespace MTGApiRequestToXml.ApiController
         /// <summary>
         /// Creates constructor
         /// </summary>        
-        public MappingTool()
+        public Card() 
         {
-            //
+            // Empty constructor
         }
     }
 }

@@ -2,66 +2,110 @@
 using System.Net.Http;
 using System.Net;
 using System.Threading.Tasks;
-using MTGApiRequestToXml.ApiController;
-using MTGApiRequestToXml.tool;
+using MTGApiRequestToXml.Data;
+using MTGApiRequestToXml.Usecases;
+using MTGApiRequestToXml.Domain;
+using MTGApiRequestToXml.Domain.Entities;
+using MTGApiRequestToXml.Common.Utils;
 
-
-/// <summary>
-/// Program class
-/// </summary>
-public class Program
+namespace MTGApiRequestToXml
 {
     /// <summary>
-    /// Main method
+    /// Program class
     /// </summary>
-    /// <returns></returns>
-    public static async Task Main()
+    public class Program
     {
-
-        await TestDeserialize();
-
-
-    }
-
-    /// <summary>
-    /// Test Serialize method
-    /// </summary>
-    /// <returns></returns>
-    private static async Task TestSerialize()
-    {
-        SryFallApiRequest sryFallApiRequest = new SryFallApiRequest();
-        JsonExtractorTool jsonExtractorTool;
-        MappingTool mappingTool;
-
-        string cardName = "Edgar Markov";
-        cardName = RegExTool.FormatCardName(cardName);
-        var jsonResponse = await sryFallApiRequest.GetResponseFromApiAsync(cardName);
-
-        if (jsonResponse != null)
+        /// <summary>
+        /// Main method
+        /// </summary>
+        /// <returns></returns>
+        public static async Task Main()
         {
-            jsonExtractorTool = new JsonExtractorTool(jsonResponse);
-            mappingTool = jsonExtractorTool.map();
-            XmlDocumentBuilder xmlDocumentBuilder = new XmlDocumentBuilder($"C:\\Users\\BATSAIKHAN_0001\\source\\repos\\MTGApiRequestToXml\\MTGApiRequestToXml\\XmlFiles");
-            await xmlDocumentBuilder.GenerateXmlFile(mappingTool);
+            //TODO : Need to pass the current folder Directory
+
+            AttributeBaseClass attributeBaseClass = new AttributeBaseClass();
+            attributeBaseClass.folderPath = @"C:\Users\BATSAIKHAN_0001\source\repos\MTGApiRequestToXml\MTGApiRequestToXml";
+
+            //await TestSerialize(attributeBaseClass);
+            await TestImagedownload(attributeBaseClass);
+            //await TestDeserialize();
+            
+
 
         }
-        else
+
+        /// <summary>
+        /// Tests wether Image is downloading
+        /// </summary>
+        /// <returns><Task/returns>
+        private static async Task TestImagedownload(AttributeBaseClass attributeBase)
         {
-            Console.WriteLine("Error: No response from Scryfall API");
+            Card card = new Card();
+            //XmlDocumentBuilder xmlDocumentBuilder = new XmlDocumentBuilder($"C:\\Users\\BATSAIKHAN_0001\\source\\repos\\MTGApiRequestToXml\\MTGApiRequestToXml\\XmlFiles");
+            CardMapper cardMapper = new CardMapper(attributeBase);
+
+            card = cardMapper.DeserializeFromXml<Card>($"atraxa,-praetors'-voice.xml");
+            
+            if(card == null)
+            {
+                Console.WriteLine("Error: No response from Scryfall API");
+                return;
+            }
+
+            ImageDownload imageDownload = new ImageDownload(attributeBase);
+            ImageInfo imageInfo = new ImageInfo(card.image_uris["normal"], card.name);
+
+            await imageDownload.Run(imageInfo);
         }
-    }
 
-    /// <summary>
-    /// Test Deserialize method
-    /// </summary>
-    /// <returns></returns>
-    private static async Task TestDeserialize()
-    {
-        MappingTool mappingTool;
-        XmlDocumentBuilder xmlDocumentBuilder = new XmlDocumentBuilder($"C:\\Users\\BATSAIKHAN_0001\\source\\repos\\MTGApiRequestToXml\\MTGApiRequestToXml\\XmlFiles");
+        public static void Load()
+        {
 
-        mappingTool = xmlDocumentBuilder.DeserializeFromXml<MappingTool>($"Edgar Markov.xml");
 
-        Console.Write(mappingTool.ToString());
+        }
+
+        /// <summary>
+        /// Test Serialize method
+        /// </summary>
+        /// <returns></returns>
+        private static async Task TestSerialize(AttributeBaseClass attributeBaseClass)
+        {
+            SryfallAPI sryFallApiRequest = new SryfallAPI();
+            MapCard getCard;
+            Card card;
+
+            string cardName = "Atraxa, Praetors' Voice";
+            cardName = RegExUtil.FormatCardName(cardName);
+            var jsonResponse = await sryFallApiRequest.GetResponseFromApiAsync(cardName);
+
+            if (jsonResponse != null)
+            {
+                getCard = new MapCard(jsonResponse);
+                card = getCard.Run();
+
+                //XmlDocumentBuilder xmlDocumentBuilder = new XmlDocumentBuilder($"C:\\Users\\BATSAIKHAN_0001\\source\\repos\\MTGApiRequestToXml\\MTGApiRequestToXml\\XmlFiles");
+                XmlDocumentBuilder xmlDocumentBuilder = new XmlDocumentBuilder(attributeBaseClass);
+                await xmlDocumentBuilder.GenerateXmlFile(card);
+
+            }
+            else
+            {
+                Console.WriteLine("Error: No response from Scryfall API");
+            }
+        }
+
+        /// <summary>
+        /// Test Deserialize method
+        /// </summary>
+        /// <returns></returns>
+        private static async Task TestDeserialize(AttributeBaseClass attributeBaseClass)
+        {
+            Card card;
+
+            XmlDocumentBuilder xmlDocumentBuilder = new XmlDocumentBuilder(attributeBaseClass);
+
+            card = xmlDocumentBuilder.DeserializeFromXml<Card>($"Edgar Markov.xml");
+
+        }
     }
 }

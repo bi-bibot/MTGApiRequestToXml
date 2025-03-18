@@ -1,34 +1,46 @@
 ﻿using System.Xml;
 using System.IO;
 using System.Xml.Serialization;
-using MTGApiRequestToXml.ApiController;
 using System.Xml.Linq;
 using System.Reflection;
+using System.ComponentModel.DataAnnotations;
+using MTGApiRequestToXml.Domain;
+using MTGApiRequestToXml.Domain.Entities;
+using MTGApiRequestToXml.Common.Utils;
 
-namespace MTGApiRequestToXml.ApiController
+namespace MTGApiRequestToXml.Usecases
 {
-    public class XmlDocumentBuilder
+    public class XmlDocumentBuilder : AttributeBaseClass
     {
 
-        private string folderPath;
-        public XmlDocumentBuilder(string folderPath)
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public XmlDocumentBuilder(AttributeBaseClass attributeBaseClass)
         {
-            this.folderPath = folderPath;
+            folderPath = attributeBaseClass.folderPath;
         }
 
         /// <returns></returns>
-        public async Task GenerateXmlFile(MappingTool mappingTool)
+        public async Task GenerateXmlFile(Card card)
         {
             //Before this i have to map the json file to xml
             try
             {
-                if (!Directory.Exists(folderPath))
+                string path = Path.Combine(this.folderPath, "Asset", "XmlFiles");
+                if (!Directory.Exists(path))
                 {
                     Directory.CreateDirectory(folderPath);
 
                 }
-                XDocument doc = SerializeToXml(mappingTool);
-                doc.Save(Path.Combine(folderPath, $"{mappingTool.name}.xml"));
+                XDocument doc = SerializeToXml(card);
+
+                string filePath = Path.Combine(path, $"{RegExUtil.FormatCardName(card.name)}.xml");
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                }
+                doc.Save(filePath);
 
             }
             catch (Exception e)
@@ -40,18 +52,18 @@ namespace MTGApiRequestToXml.ApiController
         /// <summary>
         /// Serialize MappingTool object to XML
         /// </summary>
-        /// <param name="mappingTool">Mapping object</param>
+        /// <param name="card">Mapping object</param>
         /// <returns>xmlfile</returns>
-        private XDocument SerializeToXml(MappingTool mappingTool)
+        private XDocument SerializeToXml(Card card)
         {
             //TODO:: if that exists...
-            XElement root = new XElement(typeof(MappingTool).Name);
-            foreach (PropertyInfo prop in typeof(MappingTool).GetProperties())
+            XElement root = new XElement(typeof(Card).Name);
+            foreach (PropertyInfo prop in typeof(Card).GetProperties())
             {
                 if (prop.PropertyType == typeof(Dictionary<string, string>))
                 {
                     XElement dictElement = new XElement(prop.Name);
-                    var dict = (Dictionary<string, string>)prop.GetValue(mappingTool);
+                    var dict = (Dictionary<string, string>)prop.GetValue(card);
                     foreach (var kvp in dict)
                     {
                         dictElement.Add(new XElement("Attribute",
@@ -63,7 +75,7 @@ namespace MTGApiRequestToXml.ApiController
                 else if(prop.PropertyType == typeof(List<string>))
                 {
                     XElement listElement = new XElement(prop.Name);
-                    var list = (List<string>)prop.GetValue(mappingTool);
+                    var list = (List<string>)prop.GetValue(card);
                     foreach (var item in list)
                     {
                         listElement.Add(new XElement("Item", item));
@@ -72,22 +84,22 @@ namespace MTGApiRequestToXml.ApiController
                 }
                 else
                 {
-                    root.Add(new XElement(prop.Name, prop.GetValue(mappingTool)));
+                    root.Add(new XElement(prop.Name, prop.GetValue(card)));
                 }
             }
             return new XDocument(new XDeclaration("1.0", "utf-8", "yes"), root);
         }
 
-        public  MappingTool DeserializeFromXml <MappingTool>(string fileName) where MappingTool : new()
+        public  Card DeserializeFromXml <Card>(string fileName) where Card : new()
         {
-            MappingTool obj = new MappingTool();
+            Card obj = new Card();
             string path = Path.Combine(folderPath, fileName);
 
             if (File.Exists(path))
             {
                 XDocument doc = XDocument.Load(path);
                 
-                foreach (PropertyInfo prop in typeof(MappingTool).GetProperties())
+                foreach (PropertyInfo prop in typeof(Card).GetProperties())
                 {
                     if (prop.PropertyType == typeof(Dictionary<string, string>))
                     {

@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace MTGApiRequestToXml.ApiController
+namespace MTGApiRequestToXml.Data
 {
     /// <summary>
     /// Handling Api request of Edhrec

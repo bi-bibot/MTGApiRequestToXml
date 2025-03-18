@@ -5,23 +5,23 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace MTGApiRequestToXml.tool
+namespace MTGApiRequestToXml.Common.Utils
 {
     /// <summary>
     /// RegExTool class for handling regular expression
     /// </summary>
-    public class RegExTool
+    public class RegExUtil
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public RegExTool() { }
+        public RegExUtil() { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="name">card name</param>
-        public RegExTool(string name) { }
+        public RegExUtil(string name) { }
 
         /// <summary>
         /// Format card name

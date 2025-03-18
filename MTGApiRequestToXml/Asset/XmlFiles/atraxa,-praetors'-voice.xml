@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>d0d33d52-3d28-4635-b985-51e126289259</id>
+  <name>Atraxa, Praetors' Voice</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/d/0/d0d33d52-3d28-4635-b985-51e126289259.jpg?1599707796" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/d/0/d0d33d52-3d28-4635-b985-51e126289259.jpg?1599707796" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/d/0/d0d33d52-3d28-4635-b985-51e126289259.jpg?1599707796" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/d/0/d0d33d52-3d28-4635-b985-51e126289259.png?1599707796" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/d/0/d0d33d52-3d28-4635-b985-51e126289259.jpg?1599707796" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/d/0/d0d33d52-3d28-4635-b985-51e126289259.jpg?1599707796" />
+  </image_uris>
+  <mana_cost>{G}{W}{U}{B}</mana_cost>
+  <cmc>4</cmc>
+  <type_line>Legendary Creature — Phyrexian Angel Horror</type_line>
+  <oracle_text>Flying, vigilance, deathtouch, lifelink
+At the beginning of your end step, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)</oracle_text>
+  <colors>
+    <Item>B</Item>
+    <Item>G</Item>
+    <Item>U</Item>
+    <Item>W</Item>
+  </colors>
+  <color_identity>
+    <Item>B</Item>
+    <Item>G</Item>
+    <Item>U</Item>
+    <Item>W</Item>
+  </color_identity>
+</Card>

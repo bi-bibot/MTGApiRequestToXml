@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MTGApiRequestToXml.tool
+namespace MTGApiRequestToXml.Common.Utils
 {
     /// <summary>
     /// DictTool class for handling dictionary
     /// </summary>
-    public class DictTool
+    public class DictUtil
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public DictTool() { }
+        public DictUtil() { }
 
         /// <summary>
         /// gets Set of cards to just list of cards

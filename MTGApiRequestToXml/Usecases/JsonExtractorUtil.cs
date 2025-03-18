@@ -7,11 +7,11 @@ using System.Text.Json.Serialization;
 using System.Xml.Serialization;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using MTGApiRequestToXml.ApiController;
+using MTGApiRequestToXml.Domain;
 
-namespace MTGApiRequestToXml.tool
+namespace MTGApiRequestToXml.Usecases
 {
-    public class JsonExtractorTool
+    public class JsonExtractorUtil
     {
         /// <summary>
         /// jsonResponse
@@ -22,7 +22,7 @@ namespace MTGApiRequestToXml.tool
         /// Constructor
         /// </summary>
         /// <param name="jsonResponse"></param>
-        public JsonExtractorTool(string jsonResponse)
+        public JsonExtractorUtil(string jsonResponse)
         {
             this.jsonResponse = jsonResponse;
         }
@@ -31,12 +31,14 @@ namespace MTGApiRequestToXml.tool
         /// Map json to object
         /// </summary>
         /// <returns>returns mapped table</returns>
+        /*
         public MappingTool map()
         {
-
+            CardMapper cardMapper = CardMapper.DeserializeFromXml<Card>("$\"Markov Baron.xml\"");
             MappingTool middleware = JsonConvert.DeserializeObject<MappingTool>(jsonResponse);
 
             return middleware;
         }
+        */
     }
 }

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>824b2d73-2151-4e5e-9f05-8f63e2bdcaa9</id>
+  <name>Krenko, Mob Boss</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/8/2/824b2d73-2151-4e5e-9f05-8f63e2bdcaa9.jpg?1730632010" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/8/2/824b2d73-2151-4e5e-9f05-8f63e2bdcaa9.jpg?1730632010" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/8/2/824b2d73-2151-4e5e-9f05-8f63e2bdcaa9.jpg?1730632010" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/8/2/824b2d73-2151-4e5e-9f05-8f63e2bdcaa9.png?1730632010" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/8/2/824b2d73-2151-4e5e-9f05-8f63e2bdcaa9.jpg?1730632010" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/8/2/824b2d73-2151-4e5e-9f05-8f63e2bdcaa9.jpg?1730632010" />
+  </image_uris>
+  <mana_cost>{2}{R}{R}</mana_cost>
+  <cmc>4</cmc>
+  <type_line>Legendary Creature — Goblin Warrior</type_line>
+  <oracle_text>{T}: Create X 1/1 red Goblin creature tokens, where X is the number of Goblins you control.</oracle_text>
+  <colors>
+    <Item>R</Item>
+  </colors>
+  <color_identity>
+    <Item>R</Item>
+  </color_identity>
+</Card>
