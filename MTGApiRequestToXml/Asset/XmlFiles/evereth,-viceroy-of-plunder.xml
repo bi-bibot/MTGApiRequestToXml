@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>f9c9c0be-8c69-45e5-bdcb-e62ddb05e532</id>
+  <name>Evereth, Viceroy of Plunder</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/f/9/f9c9c0be-8c69-45e5-bdcb-e62ddb05e532.jpg?1730485844" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/f/9/f9c9c0be-8c69-45e5-bdcb-e62ddb05e532.jpg?1730485844" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/f/9/f9c9c0be-8c69-45e5-bdcb-e62ddb05e532.jpg?1730485844" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/f/9/f9c9c0be-8c69-45e5-bdcb-e62ddb05e532.png?1730485844" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/f/9/f9c9c0be-8c69-45e5-bdcb-e62ddb05e532.jpg?1730485844" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/f/9/f9c9c0be-8c69-45e5-bdcb-e62ddb05e532.jpg?1730485844" />
+  </image_uris>
+  <mana_cost>{2}{B}</mana_cost>
+  <cmc>3</cmc>
+  <type_line>Legendary Creature — Vampire Soldier</type_line>
+  <oracle_text>Flying
+Sacrifice another creature or artifact: Put a +1/+1 counter on Evereth. If the sacrificed permanent was a Treasure, Evereth gains lifelink until end of turn. Activate only as a sorcery.
+When Evereth dies, you may pay {1}{B/R}. When you do, Evereth deals damage equal to its power to each opponent.</oracle_text>
+  <colors>
+    <Item>B</Item>
+  </colors>
+  <color_identity>
+    <Item>B</Item>
+    <Item>R</Item>
+  </color_identity>
+</Card>

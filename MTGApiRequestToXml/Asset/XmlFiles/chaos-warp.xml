@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>3e78cf93-3b4e-4cd7-a9f8-0a8737013856</id>
+  <name>Chaos Warp</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/3/e/3e78cf93-3b4e-4cd7-a9f8-0a8737013856.jpg?1743206633" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/3/e/3e78cf93-3b4e-4cd7-a9f8-0a8737013856.jpg?1743206633" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/3/e/3e78cf93-3b4e-4cd7-a9f8-0a8737013856.jpg?1743206633" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/3/e/3e78cf93-3b4e-4cd7-a9f8-0a8737013856.png?1743206633" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/3/e/3e78cf93-3b4e-4cd7-a9f8-0a8737013856.jpg?1743206633" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/3/e/3e78cf93-3b4e-4cd7-a9f8-0a8737013856.jpg?1743206633" />
+  </image_uris>
+  <mana_cost>{2}{R}</mana_cost>
+  <cmc>3</cmc>
+  <type_line>Instant</type_line>
+  <oracle_text>The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it's a permanent card, they put it onto the battlefield.</oracle_text>
+  <colors>
+    <Item>R</Item>
+  </colors>
+  <color_identity>
+    <Item>R</Item>
+  </color_identity>
+</Card>

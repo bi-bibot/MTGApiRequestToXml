@@ -1,6 +1,6 @@
 ﻿using MTGApiRequestToXml.Data;
-using MTGApiRequestToXml.Domain.Entities;
 using MTGApiRequestToXml.Domain;
+using MTGApiRequestToXml.Data.Entities;
 
 namespace MTGApiRequestToXml.Usecases
 {

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>f87cf997-14b5-4a2c-a7d1-34b7de6561a2</id>
+  <name>Swords to Plowshares</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/f/8/f87cf997-14b5-4a2c-a7d1-34b7de6561a2.jpg?1743206210" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/f/8/f87cf997-14b5-4a2c-a7d1-34b7de6561a2.jpg?1743206210" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/f/8/f87cf997-14b5-4a2c-a7d1-34b7de6561a2.jpg?1743206210" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/f/8/f87cf997-14b5-4a2c-a7d1-34b7de6561a2.png?1743206210" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/f/8/f87cf997-14b5-4a2c-a7d1-34b7de6561a2.jpg?1743206210" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/f/8/f87cf997-14b5-4a2c-a7d1-34b7de6561a2.jpg?1743206210" />
+  </image_uris>
+  <mana_cost>{W}</mana_cost>
+  <cmc>1</cmc>
+  <type_line>Instant</type_line>
+  <oracle_text>Exile target creature. Its controller gains life equal to its power.</oracle_text>
+  <colors>
+    <Item>W</Item>
+  </colors>
+  <color_identity>
+    <Item>W</Item>
+  </color_identity>
+</Card>

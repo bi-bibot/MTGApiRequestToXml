@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MTGApiRequestToXml.Domain.Entities
+namespace MTGApiRequestToXml.Data.Entities
 {
     /// <summary>
     /// Card class for mapping json to object

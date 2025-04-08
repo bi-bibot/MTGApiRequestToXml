@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>7d711cb2-4f34-4792-90d7-2be5d329a347</id>
+  <name>Selvala, Heart of the Wilds</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/7/d/7d711cb2-4f34-4792-90d7-2be5d329a347.jpg?1689998846" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/7/d/7d711cb2-4f34-4792-90d7-2be5d329a347.jpg?1689998846" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/7/d/7d711cb2-4f34-4792-90d7-2be5d329a347.jpg?1689998846" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/7/d/7d711cb2-4f34-4792-90d7-2be5d329a347.png?1689998846" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/7/d/7d711cb2-4f34-4792-90d7-2be5d329a347.jpg?1689998846" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/7/d/7d711cb2-4f34-4792-90d7-2be5d329a347.jpg?1689998846" />
+  </image_uris>
+  <mana_cost>{1}{G}{G}</mana_cost>
+  <cmc>3</cmc>
+  <type_line>Legendary Creature — Elf Scout</type_line>
+  <oracle_text>Whenever another creature enters, its controller may draw a card if its power is greater than each other creature's power.
+{G}, {T}: Add X mana in any combination of colors, where X is the greatest power among creatures you control.</oracle_text>
+  <colors>
+    <Item>G</Item>
+  </colors>
+  <color_identity>
+    <Item>G</Item>
+  </color_identity>
+</Card>

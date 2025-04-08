@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>6172da14-9a87-4cf9-aff5-aca3470a67ef</id>
+  <name>Thrasta, Tempest's Roar</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/6/1/6172da14-9a87-4cf9-aff5-aca3470a67ef.jpg?1626097900" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/6/1/6172da14-9a87-4cf9-aff5-aca3470a67ef.jpg?1626097900" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/6/1/6172da14-9a87-4cf9-aff5-aca3470a67ef.jpg?1626097900" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/6/1/6172da14-9a87-4cf9-aff5-aca3470a67ef.png?1626097900" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/6/1/6172da14-9a87-4cf9-aff5-aca3470a67ef.jpg?1626097900" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/6/1/6172da14-9a87-4cf9-aff5-aca3470a67ef.jpg?1626097900" />
+  </image_uris>
+  <mana_cost>{10}{G}{G}</mana_cost>
+  <cmc>12</cmc>
+  <type_line>Legendary Creature — Dinosaur</type_line>
+  <oracle_text>This spell costs {3} less to cast for each other spell cast this turn.
+Trample, haste
+Trample over planeswalkers (This creature can deal excess combat damage to the controller of the planeswalker it's attacking.)
+Thrasta has hexproof as long as it entered this turn.</oracle_text>
+  <colors>
+    <Item>G</Item>
+  </colors>
+  <color_identity>
+    <Item>G</Item>
+  </color_identity>
+</Card>

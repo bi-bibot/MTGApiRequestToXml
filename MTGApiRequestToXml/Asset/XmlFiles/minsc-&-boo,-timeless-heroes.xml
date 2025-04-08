@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>928036c9-11b8-493e-b9f2-8fbd3487cd19</id>
+  <name>Minsc &amp; Boo, Timeless Heroes</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/9/2/928036c9-11b8-493e-b9f2-8fbd3487cd19.jpg?1738532969" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/9/2/928036c9-11b8-493e-b9f2-8fbd3487cd19.jpg?1738532969" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/9/2/928036c9-11b8-493e-b9f2-8fbd3487cd19.jpg?1738532969" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/9/2/928036c9-11b8-493e-b9f2-8fbd3487cd19.png?1738532969" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/9/2/928036c9-11b8-493e-b9f2-8fbd3487cd19.jpg?1738532969" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/9/2/928036c9-11b8-493e-b9f2-8fbd3487cd19.jpg?1738532969" />
+  </image_uris>
+  <mana_cost>{2}{R}{G}</mana_cost>
+  <cmc>4</cmc>
+  <type_line>Legendary Planeswalker — Minsc</type_line>
+  <oracle_text>When Minsc &amp; Boo enters and at the beginning of your upkeep, you may create Boo, a legendary 1/1 red Hamster creature token with trample and haste.
++1: Put three +1/+1 counters on up to one target creature with trample or haste.
+−2: Sacrifice a creature. When you do, Minsc &amp; Boo deals X damage to any target, where X is that creature's power. If the sacrificed creature was a Hamster, draw X cards.
+Minsc &amp; Boo, Timeless Heroes can be your commander.</oracle_text>
+  <colors>
+    <Item>G</Item>
+    <Item>R</Item>
+  </colors>
+  <color_identity>
+    <Item>G</Item>
+    <Item>R</Item>
+  </color_identity>
+</Card>

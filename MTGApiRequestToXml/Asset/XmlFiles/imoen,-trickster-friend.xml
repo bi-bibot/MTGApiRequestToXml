@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>6835928a-4483-4324-8cae-a5b477649453</id>
+  <name>Imoen, Trickster Friend</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/6/8/6835928a-4483-4324-8cae-a5b477649453.jpg?1656626982" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/6/8/6835928a-4483-4324-8cae-a5b477649453.jpg?1656626982" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/6/8/6835928a-4483-4324-8cae-a5b477649453.jpg?1656626982" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/6/8/6835928a-4483-4324-8cae-a5b477649453.png?1656626982" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/6/8/6835928a-4483-4324-8cae-a5b477649453.jpg?1656626982" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/6/8/6835928a-4483-4324-8cae-a5b477649453.jpg?1656626982" />
+  </image_uris>
+  <mana_cost>{1}{U}</mana_cost>
+  <cmc>2</cmc>
+  <type_line>Legendary Creature — Human Rogue Wizard</type_line>
+  <oracle_text>Specialize {5}. This ability costs {3} less to activate if there are two or more instant and/or sorcery cards in your graveyard.
+Imoen, Trickster Friend can't be blocked as long as it's attacking alone.</oracle_text>
+  <colors>
+    <Item>U</Item>
+  </colors>
+  <color_identity>
+    <Item>U</Item>
+  </color_identity>
+</Card>

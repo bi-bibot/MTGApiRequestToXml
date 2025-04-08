@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>a11f77e4-edb6-43c6-b8ca-d4f62d26d0c0</id>
+  <name>Danitha Capashen, Paragon</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/a/1/a11f77e4-edb6-43c6-b8ca-d4f62d26d0c0.jpg?1689995626" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/a/1/a11f77e4-edb6-43c6-b8ca-d4f62d26d0c0.jpg?1689995626" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/a/1/a11f77e4-edb6-43c6-b8ca-d4f62d26d0c0.jpg?1689995626" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/a/1/a11f77e4-edb6-43c6-b8ca-d4f62d26d0c0.png?1689995626" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/a/1/a11f77e4-edb6-43c6-b8ca-d4f62d26d0c0.jpg?1689995626" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/a/1/a11f77e4-edb6-43c6-b8ca-d4f62d26d0c0.jpg?1689995626" />
+  </image_uris>
+  <mana_cost>{2}{W}</mana_cost>
+  <cmc>3</cmc>
+  <type_line>Legendary Creature — Human Knight</type_line>
+  <oracle_text>First strike, vigilance, lifelink
+Aura and Equipment spells you cast cost {1} less to cast.</oracle_text>
+  <colors>
+    <Item>W</Item>
+  </colors>
+  <color_identity>
+    <Item>W</Item>
+  </color_identity>
+</Card>

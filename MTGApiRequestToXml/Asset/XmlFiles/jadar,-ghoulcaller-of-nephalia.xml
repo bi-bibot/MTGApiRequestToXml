@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>ff971ba7-68b8-482a-9cb1-741f6893550c</id>
+  <name>Jadar, Ghoulcaller of Nephalia</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/f/f/ff971ba7-68b8-482a-9cb1-741f6893550c.jpg?1634349933" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/f/f/ff971ba7-68b8-482a-9cb1-741f6893550c.jpg?1634349933" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/f/f/ff971ba7-68b8-482a-9cb1-741f6893550c.jpg?1634349933" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/f/f/ff971ba7-68b8-482a-9cb1-741f6893550c.png?1634349933" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/f/f/ff971ba7-68b8-482a-9cb1-741f6893550c.jpg?1634349933" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/f/f/ff971ba7-68b8-482a-9cb1-741f6893550c.jpg?1634349933" />
+  </image_uris>
+  <mana_cost>{1}{B}</mana_cost>
+  <cmc>2</cmc>
+  <type_line>Legendary Creature — Human Wizard</type_line>
+  <oracle_text>At the beginning of your end step, if you control no creatures with decayed, create a 2/2 black Zombie creature token with decayed. (It can't block. When it attacks, sacrifice it at end of combat.)</oracle_text>
+  <colors>
+    <Item>B</Item>
+  </colors>
+  <color_identity>
+    <Item>B</Item>
+  </color_identity>
+</Card>

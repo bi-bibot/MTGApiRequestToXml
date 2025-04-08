@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>b965f765-35a8-471b-b9e1-d7d539b9ae1a</id>
+  <name>Viconia, Nightsinger's Disciple</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/b/9/b965f765-35a8-471b-b9e1-d7d539b9ae1a.jpg?1656629090" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/b/9/b965f765-35a8-471b-b9e1-d7d539b9ae1a.jpg?1656629090" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/b/9/b965f765-35a8-471b-b9e1-d7d539b9ae1a.jpg?1656629090" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/b/9/b965f765-35a8-471b-b9e1-d7d539b9ae1a.png?1656629090" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/b/9/b965f765-35a8-471b-b9e1-d7d539b9ae1a.jpg?1656629090" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/b/9/b965f765-35a8-471b-b9e1-d7d539b9ae1a.jpg?1656629090" />
+  </image_uris>
+  <mana_cost>{1}{B}</mana_cost>
+  <cmc>2</cmc>
+  <type_line>Legendary Creature — Elf Cleric</type_line>
+  <oracle_text>Specialize {2}
+{1}: Exile target card from a graveyard.</oracle_text>
+  <colors>
+    <Item>B</Item>
+  </colors>
+  <color_identity>
+    <Item>B</Item>
+  </color_identity>
+</Card>

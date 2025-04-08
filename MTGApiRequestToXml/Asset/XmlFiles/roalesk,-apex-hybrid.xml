@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>a52a5f4b-d2e1-405e-82b4-ea35ab851c42</id>
+  <name>Roalesk, Apex Hybrid</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/a/5/a52a5f4b-d2e1-405e-82b4-ea35ab851c42.jpg?1673485159" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/a/5/a52a5f4b-d2e1-405e-82b4-ea35ab851c42.jpg?1673485159" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/a/5/a52a5f4b-d2e1-405e-82b4-ea35ab851c42.jpg?1673485159" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/a/5/a52a5f4b-d2e1-405e-82b4-ea35ab851c42.png?1673485159" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/a/5/a52a5f4b-d2e1-405e-82b4-ea35ab851c42.jpg?1673485159" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/a/5/a52a5f4b-d2e1-405e-82b4-ea35ab851c42.jpg?1673485159" />
+  </image_uris>
+  <mana_cost>{2}{G}{G}{U}</mana_cost>
+  <cmc>5</cmc>
+  <type_line>Legendary Creature — Human Mutant</type_line>
+  <oracle_text>Flying, trample
+When Roalesk enters, put two +1/+1 counters on another target creature you control.
+When Roalesk dies, proliferate, then proliferate again. (Choose any number of permanents and/or players, then give each another counter of each kind already there. Then do it again.)</oracle_text>
+  <colors>
+    <Item>G</Item>
+    <Item>U</Item>
+  </colors>
+  <color_identity>
+    <Item>G</Item>
+    <Item>U</Item>
+  </color_identity>
+</Card>

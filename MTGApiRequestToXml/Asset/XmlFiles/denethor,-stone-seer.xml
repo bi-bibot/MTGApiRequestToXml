@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>d32d3d8a-7450-4a29-abc7-f472426f0c28</id>
+  <name>Denethor, Stone Seer</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/d/3/d32d3d8a-7450-4a29-abc7-f472426f0c28.jpg?1686963882" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/d/3/d32d3d8a-7450-4a29-abc7-f472426f0c28.jpg?1686963882" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/d/3/d32d3d8a-7450-4a29-abc7-f472426f0c28.jpg?1686963882" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/d/3/d32d3d8a-7450-4a29-abc7-f472426f0c28.png?1686963882" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/d/3/d32d3d8a-7450-4a29-abc7-f472426f0c28.jpg?1686963882" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/d/3/d32d3d8a-7450-4a29-abc7-f472426f0c28.jpg?1686963882" />
+  </image_uris>
+  <mana_cost>{1}{U}</mana_cost>
+  <cmc>2</cmc>
+  <type_line>Legendary Creature — Human Noble</type_line>
+  <oracle_text>When Denethor enters, scry 2.
+{3}{R}, {T}, Sacrifice Denethor: Target player becomes the monarch. Denethor deals 3 damage to any target.</oracle_text>
+  <colors>
+    <Item>U</Item>
+  </colors>
+  <color_identity>
+    <Item>R</Item>
+    <Item>U</Item>
+  </color_identity>
+</Card>

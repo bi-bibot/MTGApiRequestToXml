@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>dd420010-6eaf-4853-8b7b-11de1157416b</id>
+  <name>Kami of the Crescent Moon</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/d/d/dd420010-6eaf-4853-8b7b-11de1157416b.jpg?1641601922" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/d/d/dd420010-6eaf-4853-8b7b-11de1157416b.jpg?1641601922" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/d/d/dd420010-6eaf-4853-8b7b-11de1157416b.jpg?1641601922" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/d/d/dd420010-6eaf-4853-8b7b-11de1157416b.png?1641601922" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/d/d/dd420010-6eaf-4853-8b7b-11de1157416b.jpg?1641601922" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/d/d/dd420010-6eaf-4853-8b7b-11de1157416b.jpg?1641601922" />
+  </image_uris>
+  <mana_cost>{U}{U}</mana_cost>
+  <cmc>2</cmc>
+  <type_line>Legendary Creature — Spirit</type_line>
+  <oracle_text>At the beginning of each player's draw step, that player draws an additional card.</oracle_text>
+  <colors>
+    <Item>U</Item>
+  </colors>
+  <color_identity>
+    <Item>U</Item>
+  </color_identity>
+</Card>

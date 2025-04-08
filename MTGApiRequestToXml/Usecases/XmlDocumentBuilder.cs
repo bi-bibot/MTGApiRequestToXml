@@ -5,8 +5,8 @@ using System.Xml.Linq;
 using System.Reflection;
 using System.ComponentModel.DataAnnotations;
 using MTGApiRequestToXml.Domain;
-using MTGApiRequestToXml.Domain.Entities;
 using MTGApiRequestToXml.Common.Utils;
+using MTGApiRequestToXml.Data.Entities;
 
 namespace MTGApiRequestToXml.Usecases
 {
@@ -90,7 +90,7 @@ namespace MTGApiRequestToXml.Usecases
             return new XDocument(new XDeclaration("1.0", "utf-8", "yes"), root);
         }
 
-        public  Card DeserializeFromXml <Card>(string fileName) where Card : new()
+        public Card DeserializeFromXml <Card>(string fileName) where Card : new()
         {
             Card obj = new Card();
             string path = Path.Combine(folderPath, fileName);

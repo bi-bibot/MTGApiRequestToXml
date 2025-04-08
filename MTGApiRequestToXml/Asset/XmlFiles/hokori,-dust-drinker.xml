@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>5a03f5d5-d5c3-4a7d-8d44-e60b498b4ed5</id>
+  <name>Hokori, Dust Drinker</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/5/a/5a03f5d5-d5c3-4a7d-8d44-e60b498b4ed5.jpg?1562877197" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/5/a/5a03f5d5-d5c3-4a7d-8d44-e60b498b4ed5.jpg?1562877197" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/5/a/5a03f5d5-d5c3-4a7d-8d44-e60b498b4ed5.jpg?1562877197" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/5/a/5a03f5d5-d5c3-4a7d-8d44-e60b498b4ed5.png?1562877197" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/5/a/5a03f5d5-d5c3-4a7d-8d44-e60b498b4ed5.jpg?1562877197" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/5/a/5a03f5d5-d5c3-4a7d-8d44-e60b498b4ed5.jpg?1562877197" />
+  </image_uris>
+  <mana_cost>{2}{W}{W}</mana_cost>
+  <cmc>4</cmc>
+  <type_line>Legendary Creature — Spirit</type_line>
+  <oracle_text>Lands don't untap during their controllers' untap steps.
+At the beginning of each player's upkeep, that player untaps a land they control.</oracle_text>
+  <colors>
+    <Item>W</Item>
+  </colors>
+  <color_identity>
+    <Item>W</Item>
+  </color_identity>
+</Card>

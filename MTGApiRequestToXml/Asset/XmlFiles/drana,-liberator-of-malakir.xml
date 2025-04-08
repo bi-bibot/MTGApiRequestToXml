@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Card>
+  <id>0850b41d-3589-40cd-ae22-cc5b4ddee1c4</id>
+  <name>Drana, Liberator of Malakir</name>
+  <image_uris>
+    <Attribute Key="small" Value="https://cards.scryfall.io/small/front/0/8/0850b41d-3589-40cd-ae22-cc5b4ddee1c4.jpg?1698988238" />
+    <Attribute Key="normal" Value="https://cards.scryfall.io/normal/front/0/8/0850b41d-3589-40cd-ae22-cc5b4ddee1c4.jpg?1698988238" />
+    <Attribute Key="large" Value="https://cards.scryfall.io/large/front/0/8/0850b41d-3589-40cd-ae22-cc5b4ddee1c4.jpg?1698988238" />
+    <Attribute Key="png" Value="https://cards.scryfall.io/png/front/0/8/0850b41d-3589-40cd-ae22-cc5b4ddee1c4.png?1698988238" />
+    <Attribute Key="art_crop" Value="https://cards.scryfall.io/art_crop/front/0/8/0850b41d-3589-40cd-ae22-cc5b4ddee1c4.jpg?1698988238" />
+    <Attribute Key="border_crop" Value="https://cards.scryfall.io/border_crop/front/0/8/0850b41d-3589-40cd-ae22-cc5b4ddee1c4.jpg?1698988238" />
+  </image_uris>
+  <mana_cost>{1}{B}{B}</mana_cost>
+  <cmc>3</cmc>
+  <type_line>Legendary Creature — Vampire Ally</type_line>
+  <oracle_text>Flying, first strike
+Whenever Drana deals combat damage to a player, put a +1/+1 counter on each attacking creature you control.</oracle_text>
+  <colors>
+    <Item>B</Item>
+  </colors>
+  <color_identity>
+    <Item>B</Item>
+  </color_identity>
+</Card>
